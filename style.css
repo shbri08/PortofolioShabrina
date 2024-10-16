@@ -1,0 +1,127 @@
+body {
+  font-family: serif;
+}
+
+.navbar-brand{
+  font-size: 30px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 20px; /* Sesuaikan ukuran sesuai kebutuhan */
+}
+
+h3,h6 {
+  font-weight: bold;
+}
+
+/* CSS untuk animasi */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animasi gambar di bagian Home */
+#home img {
+  animation: bounceIn 1.2s ease-in-out;
+}
+
+#home h1 {
+  animation: slideIn 1.2s ease-in-out;
+}
+
+#home p {
+  animation: slideIn 1.4s ease-in-out;
+}
+
+/* Animasi pada setiap card di bagian Organization dan Project */
+.card {
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Animasi pada bagian Follow Us */
+#followus a {
+  animation: bounceIn 1.5s ease-in-out;
+}
+
+#followus a:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.home {
+  background-color: #7c93c3;
+}
+
+#home {
+  padding-top: 50px;
+}
+
+#project {
+  background-color: #7c93c3;
+}
+
+.container {
+  padding-left: 5%; /* Menambahkan padding kiri */
+  padding-right: 5%; /* Menambahkan padding kanan */
+  text-align: center;
+  margin: 0 auto; /* Memastikan container ada di tengah */
+}
+
+.card {
+  margin: 0 auto; /* Memastikan kartu ada di tengah */
+  max-width: 100%; /* Membuat kartu responsif */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+img {
+  max-width: 100%; /* Membuat gambar di dalam kartu menjadi responsif */
+  height: auto; /* Menyesuaikan tinggi gambar dengan lebar kartu */
+}
+
+.row {
+  justify-content: center; /* Agar semua item di dalam row terpusat */
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: center; /* Menjaga setiap kolom tetap berada di tengah */
+}
